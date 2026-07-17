@@ -1,0 +1,10 @@
+{
+    # Global options
+}
+
+eduwave.site, www.eduwave.site {
+    log {
+        output file c:/Users/Administrator/Downloads/EduWave/EduWave/caddy.log
+    }
+    reverse_proxy localhost:3000
+}

@@ -1,0 +1,578 @@
+{
+  "courses": [
+    {
+      "title": "Matematică Clasa a 12-a: Curs Complet",
+      "description": "Curs complet de matematică pentru clasa a 12-a conform programei naționale: legi de compoziție, grupuri, inele și corpuri, polinoame, primitive, integrala definită și aplicații ale integralei (arii și volume). Include lecții teoretice detaliate și quiz-uri variate (grile, adevărat/fals, asociere, memorie, litere încurcate).",
+      "category": "Matematică",
+      "image_url": "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=800&auto=format&fit=crop&q=60",
+      "chapters": [
+        {
+          "title": "Capitolul 1: Legi de compoziție",
+          "description": "Operații interne, proprietăți și element neutru.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 1.1: Noțiunea de lege de compoziție",
+              "content": "## Legi de compoziție\n\nO **lege de compoziție internă** pe o mulțime M este o funcție care asociază oricăror două elemente x, y ∈ M un element x * y ∈ M.\n\n### Proprietăți posibile\n- **Comutativitate**: x * y = y * x pentru orice x, y\n- **Asociativitate**: (x * y) * z = x * (y * z)\n- **Element neutru (e)**: x * e = e * x = x pentru orice x\n- **Element simetrizabil**: pentru x există x' cu x * x' = x' * x = e\n\n### Parte stabilă\nO submulțime H ⊆ M este parte stabilă în raport cu * dacă pentru orice x, y ∈ H rezultă x * y ∈ H.\n\n### Exemplu\nPe R definim x * y = x + y - 3.\n- Element neutru: e = 3 (x * 3 = x + 3 - 3 = x)\n- Simetricul lui x: x' = 6 - x",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 1: Legi de compoziție (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "O lege * este comutativă dacă:",
+                  "options": [
+                    { "text": "x * y = y * x", "is_correct": true },
+                    { "text": "(x*y)*z = x*(y*z)", "is_correct": false },
+                    { "text": "x * e = x", "is_correct": false },
+                    { "text": "x * x' = e", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Pentru legea x * y = x + y - 3, elementul neutru este:",
+                  "options": [
+                    { "text": "3", "is_correct": true },
+                    { "text": "0", "is_correct": false },
+                    { "text": "1", "is_correct": false },
+                    { "text": "-3", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Proprietatea (x*y)*z = x*(y*z) se numește:",
+                  "options": [
+                    { "text": "asociativitate", "is_correct": true },
+                    { "text": "comutativitate", "is_correct": false },
+                    { "text": "distributivitate", "is_correct": false },
+                    { "text": "idempotență", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 1b: Asociază proprietatea (memorie)",
+              "content": "",
+              "quiz_type": "memory",
+              "questions": [
+                {
+                  "question": "x * y = y * x",
+                  "options": [ { "text": "comutativitate", "is_correct": true } ]
+                },
+                {
+                  "question": "(x*y)*z = x*(y*z)",
+                  "options": [ { "text": "asociativitate", "is_correct": true } ]
+                },
+                {
+                  "question": "x * e = x",
+                  "options": [ { "text": "element neutru", "is_correct": true } ]
+                },
+                {
+                  "question": "x * x' = e",
+                  "options": [ { "text": "element simetrizabil", "is_correct": true } ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capitolul 2: Grupuri",
+          "description": "Definiția grupului, subgrupuri și grupuri remarcabile.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 2.1: Structura de grup",
+              "content": "## Grupuri\n\nO mulțime G înzestrată cu o lege de compoziție * formează un **grup** (G, *) dacă:\n\n1. Legea este **asociativă**\n2. Există **element neutru** e\n3. Orice element are un **simetric**\n\n### Grup comutativ (abelian)\nDacă în plus legea este comutativă, grupul se numește **abelian**.\n\n### Exemple de grupuri\n- (Z, +), (Q, +), (R, +) — grupuri aditive\n- (Q*, ·), (R*, ·) — grupuri multiplicative\n- (Z_n, +) — grupul claselor de resturi modulo n\n\n### Ordinul unui grup\nNumărul de elemente ale grupului (pentru grupuri finite).",
+              "questions": []
+            },
+            {
+              "type": "lesson",
+              "title": "Lecția 2.2: Subgrupuri și morfisme",
+              "content": "## Subgrupuri și morfisme\n\n### Subgrup\nO submulțime H a unui grup G este **subgrup** dacă H este ea însăși grup față de aceeași lege. Condiție: pentru orice x, y ∈ H, x * y' ∈ H.\n\n### Morfism de grupuri\nO funcție f: G → G' între două grupuri este **morfism** dacă:\n\nf(x * y) = f(x) ∘ f(y)\n\n### Izomorfism\nUn morfism bijectiv se numește **izomorfism**. Două grupuri izomorfe au aceeași structură.\n\n### Proprietăți ale morfismelor\n- f(e) = e' (neutrul se duce în neutru)\n- f(x') = f(x)' (simetricul se duce în simetric)",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 2: Grupuri (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "Care dintre axiome NU este necesară pentru un grup?",
+                  "options": [
+                    { "text": "comutativitatea", "is_correct": true },
+                    { "text": "asociativitatea", "is_correct": false },
+                    { "text": "existența elementului neutru", "is_correct": false },
+                    { "text": "existența simetricului", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Un grup în care legea este comutativă se numește:",
+                  "options": [
+                    { "text": "abelian", "is_correct": true },
+                    { "text": "ciclic", "is_correct": false },
+                    { "text": "simetric", "is_correct": false },
+                    { "text": "liniar", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Un morfism de grupuri bijectiv se numește:",
+                  "options": [
+                    { "text": "izomorfism", "is_correct": true },
+                    { "text": "endomorfism", "is_correct": false },
+                    { "text": "automorfism", "is_correct": false },
+                    { "text": "subgrup", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 2b: Proprietăți ale grupurilor (adevărat/fals)",
+              "content": "",
+              "quiz_type": "truefalse",
+              "questions": [
+                {
+                  "question": "Orice grup abelian este comutativ.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": true },
+                    { "text": "Fals", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Într-un grup, orice element are un simetric.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": true },
+                    { "text": "Fals", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Un morfism de grupuri duce neutrul în neutru: f(e) = e'.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": true },
+                    { "text": "Fals", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Comutativitatea este o axiomă obligatorie a oricărui grup.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": false },
+                    { "text": "Fals", "is_correct": true }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capitolul 3: Inele și corpuri",
+          "description": "Structuri cu două legi de compoziție.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 3.1: Inele",
+              "content": "## Inele\n\nO mulțime A cu două legi de compoziție (notate + și ·) formează un **inel** (A, +, ·) dacă:\n\n1. (A, +) este **grup abelian**\n2. Înmulțirea este **asociativă**\n3. Înmulțirea este **distributivă** față de adunare:\n   x·(y+z) = x·y + x·z și (y+z)·x = y·x + z·x\n\n### Inel cu unitate\nDacă înmulțirea are element neutru (notat 1), inelul se numește **inel unitar**.\n\n### Inel comutativ\nDacă înmulțirea este comutativă.\n\n### Divizori ai lui zero\nElemente a, b ≠ 0 cu a·b = 0. Un inel fără divizori ai lui zero se numește **domeniu de integritate**.\n\n### Exemple\n(Z, +, ·), (Q, +, ·), (R, +, ·), (Z_n, +, ·)",
+              "questions": []
+            },
+            {
+              "type": "lesson",
+              "title": "Lecția 3.2: Corpuri",
+              "content": "## Corpuri\n\nUn **corp** este un inel unitar (K, +, ·) cu 0 ≠ 1 în care orice element nenul are invers față de înmulțire.\n\nAdică (K \\ {0}, ·) este grup.\n\n### Corp comutativ\nDacă înmulțirea este comutativă.\n\n### Exemple de corpuri\n- (Q, +, ·) — corpul numerelor raționale\n- (R, +, ·) — corpul numerelor reale\n- (C, +, ·) — corpul numerelor complexe\n- (Z_p, +, ·) cu p prim — corp finit\n\n### Observație\n(Z, +, ·) NU este corp, pentru că nu orice întreg nenul are invers întreg (ex: 2 nu are invers în Z).",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 3: Inele și corpuri (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "Într-un inel (A, +, ·), structura (A, +) este:",
+                  "options": [
+                    { "text": "grup abelian", "is_correct": true },
+                    { "text": "corp", "is_correct": false },
+                    { "text": "monoid necomutativ", "is_correct": false },
+                    { "text": "doar o mulțime", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Un inel fără divizori ai lui zero se numește:",
+                  "options": [
+                    { "text": "domeniu de integritate", "is_correct": true },
+                    { "text": "corp", "is_correct": false },
+                    { "text": "grup ciclic", "is_correct": false },
+                    { "text": "inel nul", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Care dintre următoarele NU este corp?",
+                  "options": [
+                    { "text": "(Z, +, ·)", "is_correct": true },
+                    { "text": "(Q, +, ·)", "is_correct": false },
+                    { "text": "(R, +, ·)", "is_correct": false },
+                    { "text": "(C, +, ·)", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 3b: Structuri algebrice (connect)",
+              "content": "",
+              "quiz_type": "connect",
+              "questions": [
+                {
+                  "question": "O lege, cu asociativitate, neutru și simetric",
+                  "options": [ { "text": "grup", "is_correct": true } ]
+                },
+                {
+                  "question": "Două legi, (A,+) grup abelian, · distributivă",
+                  "options": [ { "text": "inel", "is_correct": true } ]
+                },
+                {
+                  "question": "Inel unitar unde orice element nenul are invers",
+                  "options": [ { "text": "corp", "is_correct": true } ]
+                },
+                {
+                  "question": "Inel comutativ fără divizori ai lui zero",
+                  "options": [ { "text": "domeniu de integritate", "is_correct": true } ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capitolul 4: Polinoame",
+          "description": "Operații cu polinoame, rădăcini și teorema restului.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 4.1: Polinoame și operații",
+              "content": "## Polinoame\n\nUn polinom în nedeterminata X are forma:\n\nf = aₙXⁿ + aₙ₋₁Xⁿ⁻¹ + ... + a₁X + a₀\n\n- **aₙ** = coeficient dominant (aₙ ≠ 0)\n- **a₀** = termen liber\n- **n** = gradul polinomului, grad(f)\n\n### Gradul la operații\n- grad(f + g) ≤ max(grad f, grad g)\n- grad(f · g) = grad f + grad g\n\n### Împărțirea polinoamelor\nPentru f și g ≠ 0 există unic câtul q și restul r:\nf = g · q + r, cu grad(r) < grad(g)\n\n### Valoarea unui polinom\nf(a) se obține înlocuind X cu a.",
+              "questions": []
+            },
+            {
+              "type": "lesson",
+              "title": "Lecția 4.2: Rădăcini și teorema restului",
+              "content": "## Rădăcini ale polinoamelor\n\n### Rădăcină\nun număr a este rădăcină a lui f dacă f(a) = 0.\n\n### Teorema restului (Bézout)\nRestul împărțirii lui f la (X - a) este f(a).\n\n### Consecință\na este rădăcină a lui f ⟺ (X - a) divide f.\n\n### Relațiile lui Viète (grad 2)\nPentru aX² + bX + c cu rădăcinile x₁, x₂:\n- x₁ + x₂ = -b/a\n- x₁ · x₂ = c/a\n\n### Teorema fundamentală a algebrei\nOrice polinom de grad n ≥ 1 cu coeficienți complecși are exact n rădăcini complexe (cu multiplicitate).",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 4: Polinoame (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "Care este gradul polinomului f = 3X⁴ - 2X + 1?",
+                  "options": [
+                    { "text": "4", "is_correct": true },
+                    { "text": "3", "is_correct": false },
+                    { "text": "1", "is_correct": false },
+                    { "text": "0", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Conform teoremei restului, restul împărțirii lui f la (X - a) este:",
+                  "options": [
+                    { "text": "f(a)", "is_correct": true },
+                    { "text": "f(0)", "is_correct": false },
+                    { "text": "0", "is_correct": false },
+                    { "text": "a", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "grad(f · g) este egal cu:",
+                  "options": [
+                    { "text": "grad f + grad g", "is_correct": true },
+                    { "text": "grad f · grad g", "is_correct": false },
+                    { "text": "max(grad f, grad g)", "is_correct": false },
+                    { "text": "grad f - grad g", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 4b: Noțiuni cheie (litere încurcate)",
+              "content": "",
+              "quiz_type": "scrambled",
+              "questions": [
+                {
+                  "question": "Un număr a pentru care f(a) = 0 se numește... a polinomului.",
+                  "options": [ { "text": "RADACINA", "is_correct": true } ]
+                },
+                {
+                  "question": "Teorema restului se mai numește teorema lui...",
+                  "options": [ { "text": "BEZOUT", "is_correct": true } ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capitolul 5: Primitive",
+          "description": "Integrala nedefinită și metode de calcul.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 5.1: Noțiunea de primitivă",
+              "content": "## Primitive\n\nO funcție F este **primitivă** a funcției f pe un interval I dacă F este derivabilă și F'(x) = f(x) pentru orice x ∈ I.\n\n### Integrala nedefinită\nMulțimea tuturor primitivelor lui f se notează:\n\n∫ f(x) dx = F(x) + C\n\nunde C este constanta de integrare.\n\n### Primitive uzuale\n- ∫ xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ -1)\n- ∫ 1/x dx = ln|x| + C\n- ∫ eˣ dx = eˣ + C\n- ∫ sin x dx = -cos x + C\n- ∫ cos x dx = sin x + C\n\n### Proprietăți liniare\n- ∫ (f + g) dx = ∫ f dx + ∫ g dx\n- ∫ k·f dx = k · ∫ f dx",
+              "questions": []
+            },
+            {
+              "type": "lesson",
+              "title": "Lecția 5.2: Metode de integrare",
+              "content": "## Metode de integrare\n\n### Integrarea prin părți\n∫ u dv = u·v - ∫ v du\n\nSe folosește la produse de funcții (ex: x·eˣ, x·ln x).\n\n### Prima metodă de schimbare de variabilă\n∫ f(g(x))·g'(x) dx = ∫ f(t) dt, unde t = g(x)\n\n### Exemplu (prin părți)\n∫ x·eˣ dx: luăm u = x, dv = eˣ dx\n= x·eˣ - ∫ eˣ dx = x·eˣ - eˣ + C = eˣ(x - 1) + C\n\n### Exemplu (schimbare de variabilă)\n∫ 2x·(x²+1)³ dx cu t = x²+1, dt = 2x dx\n= ∫ t³ dt = t⁴/4 + C = (x²+1)⁴/4 + C",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 5: Primitive (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "Cât este ∫ x² dx?",
+                  "options": [
+                    { "text": "x³/3 + C", "is_correct": true },
+                    { "text": "2x + C", "is_correct": false },
+                    { "text": "x³ + C", "is_correct": false },
+                    { "text": "3x² + C", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Cât este ∫ 1/x dx?",
+                  "options": [
+                    { "text": "ln|x| + C", "is_correct": true },
+                    { "text": "1/x² + C", "is_correct": false },
+                    { "text": "-1/x² + C", "is_correct": false },
+                    { "text": "x + C", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Cât este ∫ cos x dx?",
+                  "options": [
+                    { "text": "sin x + C", "is_correct": true },
+                    { "text": "-sin x + C", "is_correct": false },
+                    { "text": "-cos x + C", "is_correct": false },
+                    { "text": "tg x + C", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 5b: Asociază funcția cu primitiva (memorie)",
+              "content": "",
+              "quiz_type": "memory",
+              "questions": [
+                {
+                  "question": "∫ eˣ dx",
+                  "options": [ { "text": "eˣ + C", "is_correct": true } ]
+                },
+                {
+                  "question": "∫ sin x dx",
+                  "options": [ { "text": "-cos x + C", "is_correct": true } ]
+                },
+                {
+                  "question": "∫ 1/x dx",
+                  "options": [ { "text": "ln|x| + C", "is_correct": true } ]
+                },
+                {
+                  "question": "∫ cos x dx",
+                  "options": [ { "text": "sin x + C", "is_correct": true } ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capitolul 6: Integrala definită",
+          "description": "Integrala Riemann și formula Leibniz-Newton.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 6.1: Integrala definită și formula Leibniz-Newton",
+              "content": "## Integrala definită\n\nIntegrala definită a funcției continue f pe intervalul [a, b] se notează:\n\n∫ₐᵇ f(x) dx\n\n### Formula Leibniz-Newton\nDacă F este o primitivă a lui f pe [a, b]:\n\n∫ₐᵇ f(x) dx = F(b) - F(a)\n\n### Proprietăți\n- ∫ₐᵃ f(x) dx = 0\n- ∫ₐᵇ f(x) dx = -∫ᵦᵃ f(x) dx\n- ∫ₐᵇ f dx = ∫ₐᶜ f dx + ∫ᵪᵇ f dx (aditivitate)\n- ∫ₐᵇ (f + g) dx = ∫ₐᵇ f dx + ∫ₐᵇ g dx\n\n### Exemplu\n∫₀¹ x² dx = [x³/3]₀¹ = 1/3 - 0 = 1/3",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 6: Integrala definită (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "Conform formulei Leibniz-Newton, ∫ₐᵇ f(x) dx =",
+                  "options": [
+                    { "text": "F(b) - F(a)", "is_correct": true },
+                    { "text": "F(a) - F(b)", "is_correct": false },
+                    { "text": "f(b) - f(a)", "is_correct": false },
+                    { "text": "F(b) + F(a)", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Cât este ∫₀¹ x² dx?",
+                  "options": [
+                    { "text": "1/3", "is_correct": true },
+                    { "text": "1", "is_correct": false },
+                    { "text": "1/2", "is_correct": false },
+                    { "text": "2/3", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Cât este ∫ₐᵃ f(x) dx?",
+                  "options": [
+                    { "text": "0", "is_correct": true },
+                    { "text": "1", "is_correct": false },
+                    { "text": "f(a)", "is_correct": false },
+                    { "text": "F(a)", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 6b: Proprietăți (adevărat/fals)",
+              "content": "",
+              "quiz_type": "truefalse",
+              "questions": [
+                {
+                  "question": "∫ₐᵇ f(x) dx = -∫ᵦᵃ f(x) dx.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": true },
+                    { "text": "Fals", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Integrala definită a unei funcții continue este întotdeauna pozitivă.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": false },
+                    { "text": "Fals", "is_correct": true }
+                  ]
+                },
+                {
+                  "question": "Formula Leibniz-Newton leagă integrala definită de o primitivă.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": true },
+                    { "text": "Fals", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 6c: Termen cheie (litere încurcate)",
+              "content": "",
+              "quiz_type": "scrambled",
+              "questions": [
+                {
+                  "question": "Integrala definită se mai numește integrala lui...",
+                  "options": [ { "text": "RIEMANN", "is_correct": true } ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capitolul 7: Aplicații ale integralei",
+          "description": "Calculul ariilor și volumelor cu ajutorul integralei.",
+          "items": [
+            {
+              "type": "lesson",
+              "title": "Lecția 7.1: Aria unei suprafețe",
+              "content": "## Aria subgraficului\n\n### Aria de sub grafic\nPentru f ≥ 0 continuă pe [a, b], aria mărginită de grafic, axa Ox și dreptele x = a, x = b este:\n\nA = ∫ₐᵇ f(x) dx\n\n### Aria dintre două grafice\nDacă f(x) ≥ g(x) pe [a, b], aria dintre curbe este:\n\nA = ∫ₐᵇ [f(x) - g(x)] dx\n\n### Exemplu\nAria de sub f(x) = x pe [0, 2]:\nA = ∫₀² x dx = [x²/2]₀² = 4/2 - 0 = 2\n\n### Observație\nDacă funcția este negativă pe interval, aria este valoarea absolută a integralei.",
+              "questions": []
+            },
+            {
+              "type": "lesson",
+              "title": "Lecția 7.2: Volumul corpurilor de rotație",
+              "content": "## Volumul corpurilor de rotație\n\nDacă rotim graficul funcției f ≥ 0 continuă pe [a, b] în jurul axei Ox, obținem un corp de rotație al cărui volum este:\n\nV = π ∫ₐᵇ [f(x)]² dx\n\n### Exemplu\nVolumul obținut prin rotirea lui f(x) = x pe [0, 1] în jurul axei Ox:\nV = π ∫₀¹ x² dx = π · [x³/3]₀¹ = π/3\n\n### Interpretare\nAplicațiile integralei permit calcularea unor mărimi geometrice și fizice: arii, volume, lungimi de arce, lucru mecanic etc.",
+              "questions": []
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 7: Aplicații ale integralei (grilă)",
+              "content": "",
+              "quiz_type": "classic",
+              "questions": [
+                {
+                  "question": "Aria de sub graficul lui f ≥ 0 pe [a,b] este:",
+                  "options": [
+                    { "text": "∫ₐᵇ f(x) dx", "is_correct": true },
+                    { "text": "∫ₐᵇ f'(x) dx", "is_correct": false },
+                    { "text": "f(b) - f(a)", "is_correct": false },
+                    { "text": "π ∫ₐᵇ f(x) dx", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Volumul corpului de rotație în jurul axei Ox este:",
+                  "options": [
+                    { "text": "π ∫ₐᵇ [f(x)]² dx", "is_correct": true },
+                    { "text": "∫ₐᵇ f(x) dx", "is_correct": false },
+                    { "text": "π ∫ₐᵇ f(x) dx", "is_correct": false },
+                    { "text": "2π ∫ₐᵇ f(x) dx", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Aria dintre curbele f ≥ g pe [a,b] este:",
+                  "options": [
+                    { "text": "∫ₐᵇ [f(x) - g(x)] dx", "is_correct": true },
+                    { "text": "∫ₐᵇ [g(x) - f(x)] dx", "is_correct": false },
+                    { "text": "∫ₐᵇ f(x)·g(x) dx", "is_correct": false },
+                    { "text": "∫ₐᵇ [f(x) + g(x)] dx", "is_correct": false }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 7b: Asociază mărimea cu formula (connect)",
+              "content": "",
+              "quiz_type": "connect",
+              "questions": [
+                {
+                  "question": "Aria de sub grafic",
+                  "options": [ { "text": "∫ₐᵇ f(x) dx", "is_correct": true } ]
+                },
+                {
+                  "question": "Volumul corpului de rotație",
+                  "options": [ { "text": "π ∫ₐᵇ [f(x)]² dx", "is_correct": true } ]
+                },
+                {
+                  "question": "Aria dintre două curbe",
+                  "options": [ { "text": "∫ₐᵇ [f(x) - g(x)] dx", "is_correct": true } ]
+                }
+              ]
+            },
+            {
+              "type": "quiz",
+              "title": "Quiz 7c: Concepte (adevărat/fals)",
+              "content": "",
+              "quiz_type": "truefalse",
+              "questions": [
+                {
+                  "question": "Volumul corpului de rotație conține factorul π.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": true },
+                    { "text": "Fals", "is_correct": false }
+                  ]
+                },
+                {
+                  "question": "Aria de sub graficul unei funcții pozitive se calculează cu derivata.",
+                  "options": [
+                    { "text": "Adevărat", "is_correct": false },
+                    { "text": "Fals", "is_correct": true }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
