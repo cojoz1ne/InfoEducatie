@@ -34,9 +34,6 @@ Aplicația este o platformă Next.js complet integrată cu MongoDB, utilizând t
   * **Offline/Local:** Suport pentru rularea locală a modelelor LLM instruite (precum Phi-3 Mini GGUF) direct pe CPU-ul serverului prin intermediul wrapper-ului performant `node-llama-cpp`.
   * **Cloud:** Integrare nativă cu API-urile oficiale **Google Gemini** și **OpenAI**.
 
-### 📱 Aplicație Mobilă
-* **Wrapper Nativ:** `Capacitor 8` de la Ionic, permițând compilarea și rularea proiectului ca aplicație Android nativă (APK) cu acces la performanța nativă a dispozitivului.
-
 ---
 
 ## 📂 Structura Proiectului și Rolul Directoarelor
@@ -44,7 +41,6 @@ Aplicația este o platformă Next.js complet integrată cu MongoDB, utilizând t
 ```
 EduWave/
 ├── .agents/               # Customizări și reguli locale pentru agenții IA de dezvoltare
-├── android/               # Proiectul Android generat de Capacitor (gata de compilat în Android Studio)
 ├── backups/               # Folderul securizat unde se salvează backup-urile zilnice MongoDB (.json)
 ├── database/              # Schema și fișierele de configurare a bazei de date
 ├── models/                # Modelele GGUF descărcate local (ex: Phi-3) pentru rularea IA offline
@@ -63,7 +59,6 @@ EduWave/
 │   ├── lib/               # Utilitare: conexiunea la MongoDB (mongodb.ts), gestiunea autentificării, etc.
 │   └── models/            # Definițiile Schemelor Mongoose pentru MongoDB
 ├── Caddyfile              # Fișierul de configurare a proxy-ului web securizat Caddy (HTTPS)
-├── capacitor.config.ts    # Configurația Capacitor pentru aplicația mobilă
 ├── package.json           # Dependențele, scripturile și metadatele npm
 ├── run_backup.bat         # Batch script rulat automat la 03:00 AM pentru backup MongoDB
 ├── start_caddy.bat        # Batch script pentru rularea automată a Caddy Server ca serviciu
@@ -199,27 +194,5 @@ Register-ScheduledTask -TaskName "EduWave_Caddy" -Action $caddyAction -Trigger $
 Register-ScheduledTask -TaskName "EduWave_NextJS" -Action $nextjsAction -Trigger $startupTrigger -User $username -RunLevel Highest -Force
 Register-ScheduledTask -TaskName "EduWave_DB_Backup" -Action $backupAction -Trigger $dailyTrigger -User $username -RunLevel Highest -Force
 ```
-
----
-
-## 📱 Generarea Aplicației Mobile (APK)
-
-Aplicația este pregătită pentru export ca aplicație de Android nativă prin Capacitor:
-
-1. Asigură-te că Next.js este compilat:
-   ```bash
-   npm run build
-   ```
-2. Sincronizează codul web cu Capacitor:
-   ```bash
-   npx cap sync
-   ```
-3. Deschide proiectul în **Android Studio**:
-   ```bash
-   npx cap open android
-   ```
-4. Din Android Studio, mergi la **Build > Build Bundle(s) / APK(s) > Build APK(s)**. Fișierul `.apk` rezultat va fi gata pentru instalare pe orice dispozitiv Android!
-
----
 
 ⭐ *EduWave - O soluție modernă, completă și inovatoare pentru digitalizarea procesului educațional.*
